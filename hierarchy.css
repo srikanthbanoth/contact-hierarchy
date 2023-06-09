@@ -1,0 +1,56 @@
+.dummy{
+	color: black;
+}
+.useravatar{
+    padding-left: .34rem;
+}
+.card{
+    padding: .75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: .25rem; */
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.sidebar{
+	background-color:peachpuff;
+	color: black;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 0.5rem;
+	cursor: pointer;
+	border-radius: 1rem;
+	margin: 0.32rem;
+}
+
+.clt, .clt ul, .clt li {
+     position: relative;
+}
+
+.clt ul {
+    list-style: none;
+    padding-left: 32px;
+}
+.clt li::before, .clt li::after {
+    content: "";
+    position: absolute;
+    left: -12px;
+}
+.clt li::before {
+    border-top: 1px solid #000;
+    top: 9px;
+    width: 8px;
+    height: 0;
+}
+.clt li::after {
+    border-left: 1px solid #000;
+    height: 100%;
+    width: 0px;
+    top: 2px;
+}
+
+.clt ul > li:last-child::after {
+    height: 8px;
+}
